@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.codersdelight.adauc.bidAddScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="Enter the website"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/websiteName"
+            android:tag="website"
+            android:padding="8dp"
+
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+        <LinearLayout
+            android:background="@android:color/holo_green_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            >
+
+            <TextView
+                android:padding="8dp"
+
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the advertisement type"
+                android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:tag="spinnerTag"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical">
+        <TextView
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select time period in hours"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/time"
+            android:tag="time"
+            android:padding="8dp"
+
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Enter starting bid"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/startBid"
+            android:tag="startBid"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>
